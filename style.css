@@ -1,0 +1,81 @@
+/* importing google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(#cdb4db, #a2d2ff);
+}
+
+.chatbot-popup{
+  width: 420px;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 128px 0 rgba(0,0,0,0.1),0 32px 64px -48px rgba(0,0,0,0.5);
+}
+
+.chat-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 22px;
+  background-color:#a2d2ff;
+}
+
+.chat-header .header-info{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.header-info .chatbot-logo{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 6px;
+  fill:#ffafcc;
+}
+.header-info .logo-text{
+  color:#ffffff;
+  font-size: 1.31rem;
+  font-weight: 600;
+}
+
+.chat-header button{
+  border:none;
+  color: #fff;
+  height: 40px;
+  width:40px;
+  border-radius: 50%;
+  background-color:#ffc8dd;
+  font-size: 1.9rem;
+  padding-top: 2px;
+  margin-right: -10px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.chat-header button:hover{
+   background-color: #cdb4db;
+}
+
+.chat-body{
+  padding: 25px 22px;
+  display: flex;
+  gap:20px;
+  height: 460px;
+  margin-bottom: 82px;
+  overflow-y: auto;
+  flex-direction: column;
+}
